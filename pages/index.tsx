@@ -12,7 +12,7 @@ const Home = () => (
 
     <main sx={styles.main}>
       <Flex sx={styles.history} bg="primary">
-        <image src="/zeit.svg" alt="Computadora" />
+        <img src="/image.svg" alt="ZEIT Logo" />
       </Flex>
       <Flex
         style={{ flexDirection: "column" }}
@@ -39,6 +39,10 @@ const Home = () => (
     </main>
 
     <style jsx>{`
+      img {
+        height: 100%;
+        width: auto;
+      }
       label {
         width: 320px;
         padding-bottom: 2rem;
@@ -88,8 +92,8 @@ const styles = {
   history: {
     p: 4,
     borderRadius: 30,
-    overflow: "auto",
     justifyContent: "center",
+    overflow: "visible",
   },
 
   game: {
@@ -98,9 +102,9 @@ const styles = {
     maxWidth: 320,
   },
   main: {
+    overflow: "visible",
     bg: "muted",
     borderRadius: 30,
-    overflow: "hidden",
     display: "grid",
     width: 1024,
     gridTemplateColumns: "324px 700px",
