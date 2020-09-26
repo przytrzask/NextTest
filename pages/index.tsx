@@ -125,10 +125,4 @@ const styles = {
   h2: { color: "secondary" },
 }
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  }
-}
-
 export default Home

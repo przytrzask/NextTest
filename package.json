@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "postbuild": "next-on-netlify"
+    "postbuild": "next-on-netlify",
+    "build": "next build && next export"
   },
   "dependencies": {
     "@types/theme-ui": "^0.3.6",
